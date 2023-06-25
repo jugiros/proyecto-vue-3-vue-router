@@ -23,6 +23,16 @@ const routes = [
     path: '/contact',
     name: 'contacto',
     component: loadComponent('Contact')
+  },
+  {
+    path: '/ps5/:name',
+    name: 'game',
+    component: loadComponent('Game')
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'error404',
+    component: loadComponent('Error404')
   }
 ]
 
